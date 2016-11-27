@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 		var pos =  $(this).parent().prevAll('.product').length;
 
-		$('#sildes').stop().animate({marginLeft: -positions[pos]+'px'}, 450);
+		$('#slides').stop().animate({marginLeft: -positions[pos]+'px'}, 450);
 
 		//Prevent default
 		e.preventDefault();
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	}
 
 	//Duration for auto-scroll
-	var duration =  10;
+	var duration =  2;
 	var itvl = setInterval(function() {
 		autoScroll()
 	}, duration*1000);
